@@ -12,7 +12,7 @@ class FibonacciIter():
         return self
 
     def __next__(self):
-        if not self.counter or self.counter < self.max:
+        if not self.max or self.counter < self.max:
                 if self.counter == 0:
                     self.counter += 1
                     return self.n1
